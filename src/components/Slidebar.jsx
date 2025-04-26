@@ -2,7 +2,7 @@
 
 import React, { useState,useEffect } from "react";
 import Buttons from "./Buttons";
-import { MessageCircle, Video } from "lucide-react";
+import { MessageCircle, Video, Phone } from "lucide-react";
 import { Link,useLocation } from 'react-router-dom'
 import {
   Avatar,
@@ -37,6 +37,16 @@ const Slidebar = ({onclick}) => {
           messegaje="boton video calls"
           variant="slide"
           Icon={<Video width={20} height={20} />}
+          onclik={onclick}  // 🔥 Al hacer clic, cambia el estado
+         // 🔥 Indica si está activo
+        />
+        <Buttons 
+          estado={true} 
+          ruta="/chat/b"
+          chatId={chatId}  
+          messegaje="boton Llamada"
+          variant="slide"
+          Icon={<Phone width={20} height={20} />}
           onclik={onclick}  // 🔥 Al hacer clic, cambia el estado
          // 🔥 Indica si está activo
         />

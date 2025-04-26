@@ -6,6 +6,7 @@ import RegisterPage from './pages/RegisterPage'
 import ChatPage from './pages/ChatPage'
 import Contaus from './Comon/ContacUs'
 import Videocalls from './Comon/ViedeoCalls'
+import Calls from './Comon/Calls';
 function App() {
 
 
@@ -18,8 +19,9 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
 
         <Route path="chat/" element={<ChatPage />} >
-         <Route path='' element={<Contaus></Contaus>}></Route>
+         <Route  path='' element={<Contaus></Contaus>}></Route>
          <Route path='v' element={<Videocalls></Videocalls>}></Route>
+         <Route path='b' element={<Calls></Calls>}></Route>
         </Route>
 
       </Routes>

@@ -21,7 +21,7 @@ const LoginPage = () => {
 
   return (
     <div className='flex w-full min-h-screen justify-center items-center bg-[#ECF0F4]'>
-      <h2>Login</h2>
+      <h2>login</h2>
     </div>
   )
 }

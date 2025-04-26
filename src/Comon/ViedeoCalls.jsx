@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import VideoCalls from "../components/VideoComponentsCall";
 
 const Videocalls = () => {
   return (
-    <div className="flex justify-center items-center bg-green-300 h-full overflow-hidden">
-      <h1>Videcalls</h1>
-    </div>
-  )
-}
+    <div className="flex justify-center items-center  h-full overflow-hidden">
+    <div className="h-full w-full">
 
-export default Videocalls
+     <VideoCalls />
+    </div>
+    </div>
+  );
+};
+
+export default Videocalls;
